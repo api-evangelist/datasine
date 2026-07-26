@@ -1,7 +1,24 @@
 aid: datasine
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/datasine.png
 name: DataSine
-description: DataSine is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: DataSine was a London-based AI personalization startup, founded in 2015 and backed by
+  Techstars, that applied machine learning and behavioral psychology to help marketers tailor content,
+  imagery, and copy to audience personality traits. The company was acquired by Shutterstock and folded
+  into Shutterstock's AI/creative-intelligence work; its datasine.com domain is now registered to
+  Shutterstock, Inc. (MarkMonitor) and HTTP 301-redirects to shutterstock.ai. DataSine no longer
+  operates an independent product or a developer/API surface, so this profile is retained as an
+  acquired-company record rather than an active provider awaiting API artifacts.
 url: https://raw.githubusercontent.com/api-evangelist/datasine/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +26,22 @@ x-backed-by:
 - techstars
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: shutterstock
+x-redirects-to: https://shutterstock.ai
+x-enrichment-note: 'No live API/developer surface: datasine.com refuses HTTPS and redirects to
+  shutterstock.ai (WHOIS registrant org Shutterstock, Inc.). Only domain-security probe data is real;
+  no spec-bearing artifacts could be harvested without fabrication.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Artificial Intelligence
+- Machine Learning
+- Personalization
+- Marketing
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +49,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/datasine-domain-security.yml
 - type: Website
   url: https://datasine.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
