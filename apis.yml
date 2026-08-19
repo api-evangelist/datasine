@@ -32,7 +32,7 @@ x-redirects-to: https://shutterstock.ai
 x-enrichment-note: 'No live API/developer surface: datasine.com refuses HTTPS and redirects to
   shutterstock.ai (WHOIS registrant org Shutterstock, Inc.). Only domain-security probe data is real;
   no spec-bearing artifacts could be harvested without fabrication.'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-18'
 tags:
